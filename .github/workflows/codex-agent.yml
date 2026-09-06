@@ -188,6 +188,23 @@ jobs:
             echo "- Do not escalate solely because the reporter asks for a high priority."
             echo "- An existing Priority value will be preserved by the apply step."
             echo
+            echo "Core functionality means these main Animeko user journeys:"
+            echo "- Find anime: search, browse titles, and open a title and its episode list."
+            echo "- Find playable resources: fetch data sources, match episodes, and select a playable resource."
+            echo "- Watch normally: start playback, get working video and audio, pause, and seek."
+            echo "- Continue following anime: manage the watchlist and record and sync watch progress."
+            echo "- Watch offline: download episodes and play cached episodes."
+            echo
+            echo "Assessing impact on core functionality:"
+            echo "- Affecting a core journey does not automatically make an issue High. Assess whether the journey is blocked or seriously degraded, the affected users/platforms/titles/sources, and any practical workaround."
+            echo "- High is justified by evidence of major disruption, such as playback broadly failing on a commonly used supported platform or an upgrade causing consistent startup crashes."
+            echo "- A matching failure for a specific title on one data source, with other playable resources available, is normally Medium."
+            echo "- A minor playback-control layout inconvenience or a small screenshot-edge blemish is normally Low when it does not prevent normal use."
+            echo "- A feature request involving a core journey is normally Medium; the subsystem name alone does not establish urgency or major impact."
+            echo "- Base impact and workarounds on facts supported by the report. Do not assume a single report affects all users, invent an available workaround, or treat an unmentioned workaround as proof that none exists."
+            echo "- A regression must have significant user impact to justify High; a minor cosmetic regression is still normally Low."
+            echo "- Reserve Urgent for emergencies requiring work to stop, as defined above; otherwise use Medium when evidence does not justify another level."
+            echo
             echo "Log request rules:"
             echo "- Set request_logs to true only for a Bug when application logs are likely to materially help diagnose the reported behavior."
             echo "- Runtime failures such as crashes, startup failures, stalls, playback/cache/data-source/network/auth failures, and unexplained errors are strong candidates when logs are missing."
